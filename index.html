@@ -1,37 +1,46 @@
 <html>
 <head>
 <style>
-
-.header{ 
-border:solid;
-border-width:10px;
-border-color:#FC616D;
-width:35%;
-height:100px;
+th{ <!--Styles applied to heading-->
+background-color:#148F77;
 }
-
-h1{ 
-font-family: cursive;
-color:#FF5733
+td{ <!--Styles applied to table values-->
+background-color:#1ABC9C;
+color:white;
 }
 </style>
-</head>
-<body> <!--Body starting-->
-
-<div class="header">
-<h1 align="center">Jewel in the crown of Kashmir</h1> <!--title of the page-->
-</div>
-
-<figure><!--figure starting-->
-<img src="dal.jpg" width=500px height=400px>
-<figcaption><!--figure caption-->
-Boating At Dal Lake, Srinagar
-</figcaption>
-</figure><!--figure ending-->
-<h3>More images:</h3><!--Body starting-->
-<img src="dal2.jpg" width=100px height=100px> <!--1st image-->
-<img src="dal3.jpg" width=100px height=100px> <!--2nd image-->
-<img src="dal4.jpg" width=100px height=100px> <!--3rd image-->
-</body> <!--Body ending-->
-
+<head>
+<body><!--body tag starting-->
+	<table border=1 cellpadding="4" cellspacing="2"><!--table staring-->
+	<tr><!--Ist row starting-->
+		<th></th>
+		<th>Calories</th><!--Ist row heading-->
+		<th>Vitamins</th><!--Ist row heading-->
+	</tr><!--Ist row ending-->
+	<tr><!--2nd row starting-->
+		<th>Lemon</th><!--1st column-->
+		<td>11</td><!--2nd column-->
+		<td>C</td><!--3rd column-->
+	</tr><!--2nd row ending-->
+	<tr><!--3rd row starting-->
+		<th>Strawberries</th>
+		<td>17</td>
+		<td>C</td>
+	</tr>
+	<tr><!--4th row starting-->
+		<th>Orange</th>
+		<td>65</td>
+		<td>C</td>
+	</tr>
+	<tr><!--5th row starting-->
+		<th>Grape</th>
+		<td>52</td>
+		<td>C</td>
+	</tr>
+	<tr>
+	<th></th>
+	<td colspan="2">Sign up now and save 10%</td><!--last 2 column-->
+	</tr>
+	</table><!--table ending-->
+</body><!--body tag ending-->
 </html>
