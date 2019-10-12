@@ -1,58 +1,46 @@
 <!Doctpe html>
 <html>
 <head>
-	<title>Login page</title>
-	<style>
-	.cntr{
-	align:center;
+	<title>Form example</title>
 	
-	}
-	div{
-	width:40%;
-	height:50%;
-	background-color:#EAF2F8;
-	position:absolute;
-	top:0;
-	right:0;
-	left:0;
-	bottom:0;
-	margin:auto;
-	
-	}
-	.button {
-  background-color: #4CAF50; /* Green */
-  width:30%;
-  margin-left:20%;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-
-	</style>
 </head>
-<body>
-
-	<div  >
-	<br>
-	<br>
-	<center><!--align elements to center-->
-	<form name="frm1" method="get" action="#">
-		<h2 class="cntr" >Login form</h2><!--heading-->
+<body><!--body tag starting-->
+	<fieldset ><!--First field set for entering the details-->
+	<legend>Your details:</legend><!--Title for the fieldset -->
+		<label>Name</label><!--Name label-->
+		<input type="text" name="usertxt" placeholder="Enter your Name" required="required" maxlength=30/><!--For inputting name -->
+		<br><br>
+		<label>Email</label>
+		<input type="text" name="passtxt" placeholder="Type your Email"  required="required" maxlength=15/><!-- inputting mail id-->
+	</fieldset><!--first fieldset ending -->
+	<br><!--next line -->
+	<form name="formreview" method="post" action="Google.co.in"><!--redirect to google page when click on the submit button -->
+	<fieldset><!-- Second fieldset for entering reviews-->
+		<legend>Your review:</legend><!--Title of the second fieldset review-->
 		<br>
-		<label class="cntr" align="center">Username</label><!--Inputting username-->
-		<input type="text" class="cntr" name ="usertxt" id="usertxt" required="required" align="center" placeholder="Enter username"/>
+		<label>How did you hear about us?</label>
+		<select name="hear"><!--Dropdown list -->
+			<option value="Google">Google</option> <!--Dropdown list values -->
+			<option value="Friends">Friends</option>
+			<option value="Facbook">Facebook</option>
+			<option value="Whatsapp">Whatsapp</option>
+		</select><!-- Dropdownlist closing-->
+		<br>
+		<br>
+		<label>Would you visit again?</label>
+		<br>
+		<input type="radio" name="visit" value="Yes">Yes<!--Radio button to select whether want to visit or not-->
+		<input type="radio" name="visit" value="No">No
+		<input type="radio" name="visit" value="Maybe">May be
+		<br>
+		<br>
+		<label>Comments:</label><br>
+		<textarea name="cooments" rows="4" cols="30"></textarea><!--To specify the comments -->
 		<br><br>
-		<label class="cntr" align="center">Password</label><!--Inputting password-->
-		<input type="password" class="cntr" name ="passtxt"  required="required"align="center" id="passtxt" placeholder="Enter password"/>
-		<br><br>
-		<input type ="submit" class="button" name="subButtn" required="required"align="center" value="Login"/><!--submit button-->
-		<a href="registartion.html" width="30%">New member</a><!--navigate to registration page-->
-	</form>
-	</center><!--closing center tag-->
-	</div>
-</body>
+		<input type="checkbox" checked="checked">Sign me up for email updates <!--Check box to remember Sign up on email -->
+		<br>
+		<Input type="Submit" value="Submit review"/><!--Submit button to navigate to google page -->
+	</fieldset><!--second fieldset closing -->
+	</form><!--Form closing -->
+</body><!--body tag ending-->
 </html>
