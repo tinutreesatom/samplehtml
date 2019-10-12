@@ -1,29 +1,58 @@
 <!Doctpe html>
 <html>
 <head>
-	<title>iFrame sample</title>
+	<title>Login page</title>
+	<style>
+	.cntr{
+	align:center;
+	
+	}
+	div{
+	width:40%;
+	height:50%;
+	background-color:#EAF2F8;
+	position:absolute;
+	top:0;
+	right:0;
+	left:0;
+	bottom:0;
+	margin:auto;
+	
+	}
+	.button {
+  background-color: #4CAF50; /* Green */
+  width:30%;
+  margin-left:20%;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
 
+	</style>
 </head>
-<body><!--b -->
+<body>
 
-	<h1>The Art Book Shop</h1><!--Heading tag -->
-	<ul>
-		<li><a href="#">home</a></li><!--link to home page -->
-		<li><a href="#">new publications</a></li><!--link to new publications page-->
-		<li><a href="#">contact</a></li><!--link to contact us page -->
-	</ul>
-	<address><!--Address including contact no,email address -->
-		Charing Cross Road,London,WC2,UK
-		<br><br>
-		Telephone 02079460946
-		<br><br>
-		Email<a href="Mailto:book@example.com">book@example.com</a>
-	</address><!--Address ending -->
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63067.77122350259!2d76.56005371836685!3d8.904145461511636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05fc5bdda9c621%3A0x8bf03195267372f7!2sKollam%2C%20Kerala!5e0!3m2!1sen!2sin!4v1570880657195!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""/>
-	</iframe><!--inline frame to show google map inline -->
+	<div  >
 	<br>
-	
-	
-	<footer>&copy The Art Bookshop</footer><!--footer tag to display copyright -->
-</body><!--body tag ending-->
+	<br>
+	<center><!--align elements to center-->
+	<form name="frm1" method="get" action="#">
+		<h2 class="cntr" >Login form</h2><!--heading-->
+		<br>
+		<label class="cntr" align="center">Username</label><!--Inputting username-->
+		<input type="text" class="cntr" name ="usertxt" id="usertxt" required="required" align="center" placeholder="Enter username"/>
+		<br><br>
+		<label class="cntr" align="center">Password</label><!--Inputting password-->
+		<input type="password" class="cntr" name ="passtxt"  required="required"align="center" id="passtxt" placeholder="Enter password"/>
+		<br><br>
+		<input type ="submit" class="button" name="subButtn" required="required"align="center" value="Login"/><!--submit button-->
+		<a href="registartion.html" width="30%">New member</a><!--navigate to registration page-->
+	</form>
+	</center><!--closing center tag-->
+	</div>
+</body>
 </html>

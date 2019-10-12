@@ -1,0 +1,90 @@
+<!Doctpe html>
+<html>
+<head>
+	<title>Registration</title>
+	<style>
+	div{
+	width:500;
+	height:600;
+	background-color:#EAF2F8;
+	position:absolute;
+	top:0;
+	right:0;
+	left:0;
+	bottom:0;
+	margin:auto;
+	
+	}
+	.button { 
+  background-color: #4CAF50; /* Green */
+  width:30%;
+  margin-left:20%;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+label{
+text-align:right;
+}
+	</style>
+</head>
+<body>
+
+	<div  >
+	<center><!--to align elements to center-->
+	<br>
+	<br>
+		<h2 class="cntr" >Registration form</h2><!--heading-->
+		<br>
+		<table  cellpadding="0" cellspacing="15" width="70%" height="70%" ><!--table starting-->
+			<tr><!--entering first name-->
+				<td><label class="cntr" align="center">First Name</label></td>
+				<td><input type="text" class="cntr" name ="usertxt" id="nametxt" required="required" align="center" /></td>
+			</tr>
+			<tr><!--entering last name-->
+				<td><label class="cntr" align="center">Last Name</label> </td>
+				<td><input type="text" class="cntr" name ="lnametxt"  required="required"align="center" id="passtxt" /></td>
+			</tr>
+			<tr><!--entering user name-->
+				<td><label class="cntr" align="center">Username</label> </td>
+				<td><input type="text" class="cntr" name ="usertxt" id="nametxt" required="required" align="center" /></td>
+			</tr>
+			<tr><!--entering password-->
+				<td><label class="cntr" align="center">Password</label> </td>
+				<td><input type="password" class="cntr" name ="passtxt"  required="required"align="center" id="passtxt" /></td>
+			</tr>
+			<tr><!--entering email-->
+				<td> <label class="cntr" align="center">Email</label> </td>
+				<td><input type="email" class="cntr" name ="emailtxt" id="nametxt" required="required" align="center" /></td>
+			</tr>
+			<tr><!--entering mobile no.-->
+				<td><label class="cntr" align="center">Mobile No.</label></td>
+				<td><input type="text" class="cntr" name ="passtxt"  required="required"align="center" id="passtxt" /></td>
+			</tr>
+			<tr>
+				<!--Dropdownlist-->
+				<td colspan ="2" align="center">
+				
+					<label class="cntr" align="center">City</label>
+					<select>
+						<option>Select</option>
+						<option>Kottayam</option>
+						<option>Kollam</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<!--button-->
+				<td colspan ="2" align="center"><input type ="submit" class="button" name="subButtn" required="required"align="center" value="Register"/>
+				<a href="index.html" width="30%">Back to home</a></td>
+			</tr>
+			<tr>
+		</table><!--table closing-->
+	</center>
+	</div>
+</body>
+</html>
