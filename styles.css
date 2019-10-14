@@ -1,0 +1,73 @@
+body{
+	
+	background-image:url("/images/apple.jpeg");
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+.main{
+	background-color:white;
+	width:25%;
+	height:50%;
+	margin:10% auto;
+	border-radius:20%;
+	box-shadow:0px 11px 35px 2px;
+	box-shadow:10%;
+}
+.sign
+{
+	margin-left:40%;
+	
+	padding-top:10%;
+	color:#8C55AA;
+	font-family:'ubuntu' sans-serif;
+	font-weight:bold;
+	
+}
+.un{
+	letter-spacing:1px;
+	font-family:'ubuntu' sans-serif;
+	margin-left:20%;
+	color:rgb(35,50,56);
+	font-weight:700;
+	font-size:14px;
+	background:rgba(136,126,126,0.14);
+	padding:10px 20px;
+	border-radius:20px;
+	outline:none;
+	box-sizing:border-box;
+	border:2px solid rgba(0,0,0,0.02);
+	text-align:center;
+	
+}
+
+.submit{
+	cursor:pointer;
+	color:#fff;
+	width:40%;
+	height:10%;
+	background-color:#9C27A5;
+	font-family:'ubuntu' sans-serif;
+	background:linear-gradient(to right,#9C27B0,#D71CE6  );
+	font-size:15px;
+	margin-left:30%;
+	padding:10px;
+	
+	box-sizing:border-box;
+	border:2px solid rgba(0,0,0,0.02);
+	 border-top-right-radius: 100px 100px;
+	 border-top-left-radius: 100px 100px;
+	 border-bottom-right-radius: 100px 100px;
+	border-bottom-left-radius: 100px 100px;
+}
+.submit:hover{
+	
+	background-image:none !important;
+	background-color:#38023C ;
+
+}
+a{
+	text-shadow:0px 0px 3px;
+	color:black;
+	text-decoration:none;
+	margin-left:35%;
+}
